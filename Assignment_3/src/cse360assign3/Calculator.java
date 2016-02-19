@@ -27,7 +27,7 @@ private int total;
 	 * @return the total 
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	
@@ -37,6 +37,7 @@ private int total;
 	 */
 	public void add (int value) {
 		
+		total = total + value;
 	}
 	
 	
@@ -46,6 +47,7 @@ private int total;
 	 */
 	public void subtract (int value) {
 		
+		total = total - value;
 	}
 	
 	
@@ -55,6 +57,7 @@ private int total;
 	 */
 	public void multiply (int value) {
 		
+		total = total * value;
 	}
 	
 	
@@ -64,6 +67,14 @@ private int total;
 	 */
 	public void divide (int value) {
 		
+		if (value == 0)
+		{
+			total = 0;
+		}	
+		else
+		{
+			total = total / value;
+		}
 	}
 	
 	
