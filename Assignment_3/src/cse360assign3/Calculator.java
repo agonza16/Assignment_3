@@ -5,7 +5,7 @@
  * the calculations entered.
  * 
  * @author - Abel Gonzalez for CSE360
- * @version - 1.0
+ * @version - 1.4
  * Due: February 22, 2016 @ 4pm
  */
 
