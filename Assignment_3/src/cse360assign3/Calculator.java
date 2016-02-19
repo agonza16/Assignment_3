@@ -1,0 +1,78 @@
+/**
+ * This class allows for the user to add, subtract, multiply, divide and
+ * return the total of the calculations.  In addition to that, the class 
+ * also has the option to return the history i.e. a string representing all
+ * the calculations entered.
+ * 
+ * @author - Abel Gonzalez for CSE360
+ * @version - 1.0
+ * Due: February 22, 2016 @ 4pm
+ */
+
+package cse360assign3;
+
+public class Calculator {
+private int total;
+	
+	/**
+	 * This constructs a calculator with the initial total of 0
+	 */
+	public Calculator () {
+		total = 0;  // not needed - included for clarity
+	}
+	
+	
+	/**
+	 * This method returns the total after one or multiple calculations are done
+	 * @return the total 
+	 */
+	public int getTotal () {
+		return 0;
+	}
+	
+	
+	/**
+	 * This method adds an integer to the total
+	 * @param value input integer
+	 */
+	public void add (int value) {
+		
+	}
+	
+	
+	/**
+	 * This method subtracts an integer from the total
+	 * @param value input integer
+	 */
+	public void subtract (int value) {
+		
+	}
+	
+	
+	/**
+	 * This method multiplies an integer with the total
+	 * @param value input integer
+	 */
+	public void multiply (int value) {
+		
+	}
+	
+	
+	/**
+	 * This method divides the total by the input integer
+	 * @param value input integer
+	 */
+	public void divide (int value) {
+		
+	}
+	
+	
+	/**
+	 * This method returns a String of the history of this calculator
+	 * @return a String representing the history 
+	 */
+	public String getHistory () {
+		return "";
+	}
+
+}
