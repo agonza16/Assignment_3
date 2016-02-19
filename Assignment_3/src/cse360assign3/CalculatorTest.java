@@ -153,7 +153,22 @@ public class CalculatorTest {
 
 	@Test
 	public void testGetHistory() {
-		fail("Not yet implemented");
+		
+		Calculator myCalc = new Calculator();
+		String historyString = myCalc.getHistory();
+		assertEquals("0", historyString);
+		
+		myCalc.add(5);
+		myCalc.multiply(2);
+		myCalc.divide(1);
+		myCalc.subtract(4);
+		myCalc.subtract(-10);
+		String historyString2 = myCalc.getHistory();
+		System.out.print(historyString2);
+		assertNotEquals("0+5*2/1-4--10", historyString2);
+		assertEquals("0 + 5 * 2 / 1 - 4 - -10", historyString2);
+		
+		
 	}
 
 }

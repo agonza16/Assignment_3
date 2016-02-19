@@ -13,12 +13,14 @@ package cse360assign3;
 
 public class Calculator {
 private int total;
+private String totalString;
 	
 	/**
 	 * This constructs a calculator with the initial total of 0
 	 */
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
+		totalString = "0";
 	}
 	
 	
@@ -38,6 +40,8 @@ private int total;
 	public void add (int value) {
 		
 		total = total + value;
+		totalString = totalString + " + " + String.valueOf(value);
+		
 	}
 	
 	
@@ -48,6 +52,7 @@ private int total;
 	public void subtract (int value) {
 		
 		total = total - value;
+		totalString = totalString + " - " + String.valueOf(value);
 	}
 	
 	
@@ -58,6 +63,7 @@ private int total;
 	public void multiply (int value) {
 		
 		total = total * value;
+		totalString = totalString + " * " + String.valueOf(value);
 	}
 	
 	
@@ -75,6 +81,8 @@ private int total;
 		{
 			total = total / value;
 		}
+		
+		totalString = totalString + " / " + String.valueOf(value);
 	}
 	
 	
@@ -83,7 +91,8 @@ private int total;
 	 * @return a String representing the history 
 	 */
 	public String getHistory () {
-		return "";
+		
+		return totalString;
 	}
 
 }
